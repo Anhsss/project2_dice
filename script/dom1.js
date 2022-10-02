@@ -32,14 +32,14 @@ const showOk = () => {
   dispDom("block", "none", "block", "none");  
 
   //주사위 그림
-  let tag = `<img src="./images/${randNum}.png">` ;
+  let tag = `<img src="./img/${randNum}.png">` ;
 
   //ox 그림
   let ox;
   if (randNum == userNum) ox = "o" ;
   else ox = "x" ;
 
-  tag = `${tag}<img src="./images/${ox}.png">`;
+  tag = `${tag}<img src="./img/${ox}.png">`;
   
   //이미지 표시
   document.getElementById("msg").innerHTML = tag;
@@ -53,4 +53,3 @@ document.addEventListener("DOMContentLoaded", () => {
   dispDom("none", "none", "block", "none"); 
 
 }); 
-
